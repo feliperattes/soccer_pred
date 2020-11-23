@@ -1,0 +1,3 @@
+graft soccer_pred_487
+global-exclude *.py[cod] __pycache__ *.so *.ipynb
+recursive-exclude  soccer_pred_487/jupy *
