@@ -1,5 +1,7 @@
-# ----------------------------------
+#run_flask:
+    #env FLASK_APP=app.py flask run
 #          INSTALL & TEST
+# ----------------------------------
 # ----------------------------------
 install_requirements:
 	@pip install -r requirements.txt
