@@ -380,7 +380,7 @@ def run_all(home_team, away_team):
 
     return data_pred_concat[cols]
 
-data_pred = run_all(home_team, away_team)
+data_pred = run_all("Atl Goianiense", "Atl Goianiense")
 #data_pred
 
 
