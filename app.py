@@ -7,7 +7,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
 
 
-app = Flask(__name__)
+#app = Flask(__name__)
 
 #@app.route('/')
 #def hello():
@@ -380,7 +380,7 @@ def run_all(home_team, away_team):
 
     return data_pred_concat[cols]
 
-data_pred = run_all("Atl Goianiense", "Atl Goianiense")
+data_pred = run_all(home_team, away_team)
 #data_pred
 
 
