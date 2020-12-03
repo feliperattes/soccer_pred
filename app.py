@@ -29,7 +29,7 @@ home_team = st.selectbox("Choose Home Team", list(TEAMS))
 away_team = st.selectbox("Choose Away Team", list(TEAMS))
 
 data = pd.read_csv("Data/featured_data.csv")
-final_data = pd.read_csv("Data/Final_Data.csv")
+final_data = pd.read_csv("Data/final_data.csv")
 #final_data = final_data.drop(["Unnamed: 0"], axis=1)
 
 
