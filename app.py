@@ -342,7 +342,7 @@ away_features = ['Away_Poss', 'Away_PA', 'Away_ShoT', 'Away_Saves', 'AwayFouls',
                  'AwayTackles', 'AwayInterceptions', 'AwayAerials', 'AwayClearances', 'AwayOffsides', 'AwayGoalKicks',
                  'AwayThrowIns', 'AwayLongBalls']
 
-@app.route('/')
+
 def run_all(home_team, away_team):
 
     data_pred = pd.DataFrame()
