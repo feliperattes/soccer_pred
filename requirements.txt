@@ -12,3 +12,4 @@ twine
 gunicorn
 flask
 streamlit
+sklearn
