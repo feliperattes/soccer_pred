@@ -11,3 +11,4 @@ python-gitlab
 twine
 gunicorn
 flask
+streamlit
