@@ -5,7 +5,7 @@ REQUIRED_PACKAGES = [
     "pip>=9",
     "setuptools>=26",
     "wheel>=0.29",
-    "pandas==2.9.0",
+    "pandas==1.1.4",
     "pytest==6.1.2",
     "coverage==5.3",
     #"flake8",
