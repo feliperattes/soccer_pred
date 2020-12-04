@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import MinMaxScaler
-#from flask import Flask, escape, request
+from flask import Flask, escape, request
 
 
 app = Flask(__name__)
