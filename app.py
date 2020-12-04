@@ -63,12 +63,12 @@ X = final_data.drop(['result', 'number_of_goals', 'number_of_corners'], axis=1)
 y_result = final_data['result']
 
 #split the data
-X_train, X_test, y_result_train, y_result_test = train_test_split(X, y_result, test_size=0.30)
+#X_train, X_test, y_result_train, y_result_test = train_test_split(X, y_result, test_size=0.30)
 
 #create and fil the model
 model_lr_outcome = LogisticRegression(C = 0.1)
-model_lr_outcome.fit(X_train, y_result_train)
-
+#model_lr_outcome.fit(X_train, y_result_train)
+model_lr_outcome.fit(X, y_result)
 
 
 # LOGISTIC REGRESSION FOR THE NUMBER OF CORNERS
@@ -89,31 +89,31 @@ y_cor_125 = final_data['over_12.5']
 y_cor_135 = final_data['over_13.5']
 
 # train and test data for each model
-X_train, X_test, y_cor_85_train, y_cor_85_test = train_test_split(X, y_cor_85, test_size=0.30)
-X_train, X_test, y_cor_95_train, y_cor_95_test = train_test_split(X, y_cor_95, test_size=0.30)
-X_train, X_test, y_cor_105_train, y_cor_105_test = train_test_split(X, y_cor_105, test_size=0.30)
-X_train, X_test, y_cor_115_train, y_cor_115_test = train_test_split(X, y_cor_115, test_size=0.30)
-X_train, X_test, y_cor_125_train, y_cor_125_test = train_test_split(X, y_cor_125, test_size=0.30)
-X_train, X_test, y_cor_135_train, y_cor_135_test = train_test_split(X, y_cor_135, test_size=0.30)
+#X_train, X_test, y_cor_85_train, y_cor_85_test = train_test_split(X, y_cor_85, test_size=0.30)
+#X_train, X_test, y_cor_95_train, y_cor_95_test = train_test_split(X, y_cor_95, test_size=0.30)
+#X_train, X_test, y_cor_105_train, y_cor_105_test = train_test_split(X, y_cor_105, test_size=0.30)
+#X_train, X_test, y_cor_115_train, y_cor_115_test = train_test_split(X, y_cor_115, test_size=0.30)
+#X_train, X_test, y_cor_125_train, y_cor_125_test = train_test_split(X, y_cor_125, test_size=0.30)
+#X_train, X_test, y_cor_135_train, y_cor_135_test = train_test_split(X, y_cor_135, test_size=0.30)
 
 # instantiate and fit each model
 model_lr_cor_85 = LogisticRegression(max_iter=500)
-model_lr_cor_85.fit(X_train, y_cor_85_train)
+model_lr_cor_85.fit(X, y_cor_85)
 
 model_lr_cor_95 = LogisticRegression(max_iter=500)
-model_lr_cor_95.fit(X_train, y_cor_95_train)
+model_lr_cor_95.fit(X, y_cor_95)
 
 model_lr_cor_105 = LogisticRegression(max_iter=500)
-model_lr_cor_105.fit(X_train, y_cor_105_train)
+model_lr_cor_105.fit(X, y_cor_105)
 
 model_lr_cor_115 = LogisticRegression(max_iter=500)
-model_lr_cor_115.fit(X_train, y_cor_115_train)
+model_lr_cor_115.fit(X, y_cor_115)
 
 model_lr_cor_125 = LogisticRegression(max_iter=500)
-model_lr_cor_125.fit(X_train, y_cor_125_train)
+model_lr_cor_125.fit(X, y_cor_125)
 
 model_lr_cor_135 = LogisticRegression(max_iter=500)
-model_lr_cor_135.fit(X_train, y_cor_135_train)
+model_lr_cor_135.fit(X, y_cor_135)
 
 
 # LOGISTIC REGRESSION FOR THE NUMBER OF GOALS
@@ -133,27 +133,27 @@ y_g_45 = final_data['over_4.5']
 
 
 # train and test data for each model
-X_train, X_test, y_g_05_train, y_g_05_test = train_test_split(X, y_g_05, test_size=0.30)
-X_train, X_test, y_g_15_train, y_g_15_test = train_test_split(X, y_g_15, test_size=0.30)
-X_train, X_test, y_g_25_train, y_g_25_test = train_test_split(X, y_g_25, test_size=0.30)
-X_train, X_test, y_g_35_train, y_g_35_test = train_test_split(X, y_g_35, test_size=0.30)
-X_train, X_test, y_g_45_train, y_g_45_test = train_test_split(X, y_g_45, test_size=0.30)
+#X_train, X_test, y_g_05_train, y_g_05_test = train_test_split(X, y_g_05, test_size=0.30)
+#X_train, X_test, y_g_15_train, y_g_15_test = train_test_split(X, y_g_15, test_size=0.30)
+#X_train, X_test, y_g_25_train, y_g_25_test = train_test_split(X, y_g_25, test_size=0.30)
+#X_train, X_test, y_g_35_train, y_g_35_test = train_test_split(X, y_g_35, test_size=0.30)
+#X_train, X_test, y_g_45_train, y_g_45_test = train_test_split(X, y_g_45, test_size=0.30)
 
 # instantiate and fit each model
 model_lr_g_05 = LogisticRegression(max_iter=500)
-model_lr_g_05.fit(X_train, y_g_05_train)
+model_lr_g_05.fit(X, y_g_05)
 
 model_lr_g_15 = LogisticRegression(max_iter=500)
-model_lr_g_15.fit(X_train, y_g_15_train)
+model_lr_g_15.fit(X, y_g_15)
 
 model_lr_g_25 = LogisticRegression(max_iter=500)
-model_lr_g_25.fit(X_train, y_g_25_train)
+model_lr_g_25.fit(X, y_g_25)
 
 model_lr_g_35 = LogisticRegression(max_iter=500)
-model_lr_g_35.fit(X_train, y_g_35_train)
+model_lr_g_35.fit(X, y_g_35)
 
 model_lr_g_45 = LogisticRegression(max_iter=500)
-model_lr_g_45.fit(X_train, y_g_45_train)
+model_lr_g_45.fit(X, y_g_45)
 
 
 final_data.reset_index(inplace=True)
