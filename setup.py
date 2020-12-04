@@ -2,7 +2,6 @@ from setuptools import find_packages
 from setuptools import setup
 
 REQUIRED_PACKAGES = [
-    'streamlit==0.65.2',
     "pip>=9",
     "setuptools>=26",
     "wheel>=0.29",
